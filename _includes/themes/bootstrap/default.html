@@ -109,9 +109,6 @@ lantoniotrento@gmail.com
   {% endif %}
 
 
-<!-- ********************* Grads SCRIPTING ******************************-->
-<!--Custom script loaded by children page-->
-{% if page.js %}<script type="text/javascript" src="text/css" href="{{ BASE_PATH }}/assets/js/custom/{{ page.js }}" />{% endif %}
 
 
 
@@ -130,6 +127,11 @@ lantoniotrento@gmail.com
 
         <script src="{{ BASE_PATH }}/assets/js/plugins.js"></script>
         <script src="{{ BASE_PATH }}/assets/js/main.js"></script>
+
+	<!-- ********************* Grads SCRIPTING ******************************-->
+	<!--Custom script loaded by children page-->
+	{% if page.js %}<script src="{{ BASE_PATH }}/assets/js/{{ page.js }}"></script>{% endif %}
+
 
 
   </body>
